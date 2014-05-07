@@ -1,0 +1,24 @@
+// frameworks
+@import "libs/bourbon/bourbon"; 
+//@import "partials/grid";  // custom grid params have to go here to override neat
+@import "libs/neat/neat"; 
+@import "libs/normalize"; 
+@import "libs/fa/font-awesome";
+
+// partials
+// @import "libs/animate"; // big lib add if needed
+@import "partials/mixins"; 
+@import "partials/base"; //reset
+@import "partials/typography";
+@import "partials/elements";
+@import "partials/forms";
+@import "partials/accessibility";
+@import "partials/alignments";
+@import "partials/clearings";
+@import "partials/infinitescroll";
+@import "partials/media";
+
+// site elements add more as site grows in complexity\
+@import "elements/navigation";
+@import "elements/widgets";
+@import "elements/content";

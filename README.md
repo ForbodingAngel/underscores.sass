@@ -15,7 +15,9 @@ It should be pointed out that you don't have to use bourbon.neat or font-awesome
 So how to I use this?
 ================
 
-First off, you need to have node.js, grunt.js, ruby, and sass installed (this all sounds a lot harder than it actually is).
+First off, you need to have node.js, grunt.js, ruby, and sass installed (this all sounds a lot harder than it actually is, even on windows it's quite simple! (full disclosure, I use win7 with console 2 and git bash)).
+
+You will need this grunt module: https://www.npmjs.org/package/grunt-contrib-compass ($ npm install grunt-contrib-compass )
 
 Next, just dump these contents into your theme folder and start grunt from your theme folder.
 

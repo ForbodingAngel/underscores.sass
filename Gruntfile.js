@@ -34,17 +34,6 @@ module.exports = function (grunt) {
           },
         },
       },
-      
-      uglify: {
-			options: {
-			  mangle: false
-			},
-			my_target: {
-			  files: {
-			    'js/minified.min.js': ['js/main.js']
-			  }
-			},
-		},
 
       // grunt sass
       // useses bleeding edge node-sass for quicker compile
@@ -57,7 +46,7 @@ module.exports = function (grunt) {
       //       sourceComments: "map",
       //     },
       //     files: {
-      //       'css/main.css' : 'scss/main.scss',  // 'destination': 'source'
+      //       'style.css' : 'scss/main.scss',  // 'destination': 'source'
       //     },
       //   },
       // },
@@ -103,12 +92,11 @@ module.exports = function (grunt) {
 
         scripts: {
           files: [
-            'js/*.js',
+            'js/src/*.js',
           ],
           options: {
             livereload: true,
           },
-          //tasks: ['uglify'],
         },
 
         images: {
@@ -130,6 +118,4 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-php');
 
   grunt.registerTask('default', ['watch', 'php', 'sass']);
-  
-  grunt.loadNpmTasks('grunt-contrib-uglify');
 };

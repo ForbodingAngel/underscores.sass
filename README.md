@@ -19,6 +19,8 @@ First off, you need to have node.js, grunt.js, ruby, and sass installed (this al
 
 You will need this grunt module: https://www.npmjs.org/package/grunt-contrib-compass ($ npm install grunt-contrib-compass )
 
+Install the browser plugin for livereload (this is necessary until I figure out how to get the tiny livereload plugin to work): http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions
+
 Next, just dump these contents into your theme folder and start grunt from your theme folder.
 
 Profit???

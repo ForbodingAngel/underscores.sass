@@ -1,6 +1,6 @@
 // frameworks
 @import "libs/bourbon/bourbon"; 
-//@import "partials/grid";  // custom grid params have to go here to override neat
+@import "partials/grid";  // custom grid params have to go here to override neat
 @import "libs/neat/neat"; 
 @import "libs/normalize"; 
 @import "libs/fa/font-awesome";

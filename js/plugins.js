@@ -21,6 +21,7 @@
     }
 }());
 
+
 // loads up livereload for dev
 var loadReload = function() {
 
@@ -28,8 +29,16 @@ var loadReload = function() {
         lr.type = "text/javascript";
         lr.src = "//localhost:35729/livereload.js";
 
-    if (jQuery('#globalFooter')) {
-        jQuery('#globalFooter').append(lr);
+    if (jQuery('.site-footer')) {
+        jQuery('.site-footer').append(lr);
         console.log('livereload is locked and loaded!!');
     }
 }
+
+/* Nuclear option test to make sure that this file is loading correctly
+$(document).ready(function(){ 
+						   
+	$("div").css("border", "3px solid red");
+	
+});
+*/

@@ -19,9 +19,13 @@ First off, you need to have node.js, grunt.js, ruby, and sass installed (this al
 
 You will need this grunt module: https://www.npmjs.org/package/grunt-contrib-compass ($ npm install grunt-contrib-compass )
 
-Install the browser plugin for livereload (this is necessary until I figure out how to get the tiny livereload plugin to work): http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions
+Just dump these contents into your theme folder
 
-Next, just dump these contents into your theme folder and start grunt from your theme folder.
+Add these lines to your functions.php file in the enqueue script section
+	wp_enqueue_script( 'underscores-sass-plugins', get_template_directory_uri() . '/js/plugins.js', array(), '20120206', true );
+	wp_enqueue_script( 'underscores-sass-main', get_template_directory_uri() . '/js/main.js', array(), '20120205', true );
+
+Start grunt via cli from your theme folder.
 
 Profit???
 

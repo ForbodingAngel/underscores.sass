@@ -22,7 +22,7 @@ Just dump the contents of this repo into your theme folder
 
 From the theme folder, run (this only needs to be done once so that the modules and dependencies get installed):
 
-	$npm install
+	$ npm install
 
 Add these lines to your functions.php file in the enqueue script section:
 

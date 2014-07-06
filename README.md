@@ -14,6 +14,10 @@ It should be pointed out that you don't have to use bourbon.neat or font-awesome
 
 First off, you need to have node.js, grunt.js, ruby, and sass installed (this all sounds a lot harder than it actually is, even on windows it's quite simple! (full disclosure, I use win7 with console 2 and git bash)).
 
+After installing node.js (make sure it is in your PATH environment variable!), run this command to install grunt.js:
+
+	$ npm install -g grunt-cli
+
 You will need this grunt module: https://www.npmjs.org/package/grunt-contrib-compass by running this command:
 	
 	$ npm install grunt-contrib-compass
